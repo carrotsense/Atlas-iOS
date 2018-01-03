@@ -829,7 +829,7 @@ static NSInteger const ATLPhotoActionSheet = 1000;
     } else {
         [self.typingParticipantIDs removeObject:typingIndicator.sender.userID];
     }
-    [self updateTypingIndicatorOverlay:YES];
+//    [self updateTypingIndicatorOverlay:YES];
 }
 
 - (void)layerClientObjectsDidChange:(NSNotification *)notification
