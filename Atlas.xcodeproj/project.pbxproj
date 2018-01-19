@@ -123,6 +123,7 @@
 		40EBBF671E9D4C2300C25041 /* ATLAvatarViewTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 40EBBF651E9D4C1B00C25041 /* ATLAvatarViewTest.m */; };
 		40EBBF681E9D4C2400C25041 /* ATLAvatarViewTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 40EBBF651E9D4C1B00C25041 /* ATLAvatarViewTest.m */; };
 		58239E45B91E3CD954E75554 /* Pods_test_ProgrammaticTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8050D6CFBC2EA1D5D6B800A /* Pods_test_ProgrammaticTests.framework */; };
+		59ACA65E201191CC00B81FB1 /* ATLMMediaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59ACA65C201191CC00B81FB1 /* ATLMMediaViewController.m */; };
 		5A86A2D11B82BB11005AF74B /* ATLMessageCollectionViewCellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A86A2D01B82BB11005AF74B /* ATLMessageCollectionViewCellTests.m */; };
 		5A86A2D21B82BB11005AF74B /* ATLMessageCollectionViewCellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A86A2D01B82BB11005AF74B /* ATLMessageCollectionViewCellTests.m */; };
 		5AEFC5CB1B79834300ADE4EC /* boatgif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5AEFC5CA1B79834300ADE4EC /* boatgif.gif */; };
@@ -348,6 +349,8 @@
 		3DA2FB8B1F1EA03400E890FA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40EBBF651E9D4C1B00C25041 /* ATLAvatarViewTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATLAvatarViewTest.m; sourceTree = "<group>"; };
 		4160065E3D4E4D6CA1EF3F99 /* Pods-Storyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Storyboard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Storyboard/Pods-Storyboard.debug.xcconfig"; sourceTree = "<group>"; };
+		59ACA65C201191CC00B81FB1 /* ATLMMediaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATLMMediaViewController.m; sourceTree = "<group>"; };
+		59ACA65D201191CC00B81FB1 /* ATLMMediaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATLMMediaViewController.h; sourceTree = "<group>"; };
 		5A86A2D01B82BB11005AF74B /* ATLMessageCollectionViewCellTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ATLMessageCollectionViewCellTests.m; path = Tests/ATLMessageCollectionViewCellTests.m; sourceTree = "<group>"; };
 		5AEFC5CA1B79834300ADE4EC /* boatgif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = boatgif.gif; sourceTree = "<group>"; };
 		5AF32FD21AA59C39005C13D7 /* ATLUserMockTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATLUserMockTest.m; sourceTree = "<group>"; };
@@ -517,6 +520,8 @@
 		3DA2FAD91F1E9DF500E890FA /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				59ACA65D201191CC00B81FB1 /* ATLMMediaViewController.h */,
+				59ACA65C201191CC00B81FB1 /* ATLMMediaViewController.m */,
 				3DA2FADA1F1E9DF500E890FA /* ATLAddressBarViewController.h */,
 				3DA2FADB1F1E9DF500E890FA /* ATLAddressBarViewController.m */,
 				3DA2FADC1F1E9DF500E890FA /* ATLBaseConversationViewController.h */,
@@ -1605,6 +1610,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D02CDCDD1A9FFC930013CBE8 /* ATLTestUtilities.m in Sources */,
+				59ACA65E201191CC00B81FB1 /* ATLMMediaViewController.m in Sources */,
 				D0294DE81A93F39300702856 /* ATLMediaStreamTests.m in Sources */,
 				D04517141A9F9A0C00E137D9 /* ATLMediaAttachmentTests.m in Sources */,
 			);
