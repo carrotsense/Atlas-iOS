@@ -36,6 +36,7 @@
 #import "ATLMessageInputToolbar.h"
 #import "ATLParticipantTableViewController.h"
 #import "ATLTypingIndicatorViewController.h"
+#import "ATLMMediaViewController.h"
 
 ///-------------
 /// @name Models
