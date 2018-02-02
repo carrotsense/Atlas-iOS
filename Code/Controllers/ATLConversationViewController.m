@@ -222,7 +222,7 @@ static NSInteger const ATLPhotoActionSheet = 1000;
 - (void)setConversation:(LYRConversation *)conversation
 {
     if (!conversation && !_conversation) return;
-//    if ([conversation isEqual:_conversation]) return;
+    if ([conversation isEqual:_conversation]) return;
     
     _conversation = conversation;
     
