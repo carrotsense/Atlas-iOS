@@ -307,7 +307,7 @@ static NSInteger const ATLPhotoActionSheet = 1000;
     self.messageInputToolbar.leftAccessoryButton.enabled = shouldEnableButton;
     
     // Mark all messages as read if needed
-    if (self.conversation.lastMessage && self.marksMessagesAsRead) {
+    if (self.conversation.lastMessage && self.marksMessagesAsRead && [[UIApplication sharedApplication] applicationState] == UIApplicationStateActive) {
         [self.conversation markAllMessagesAsRead:nil];
     }
 }
@@ -862,13 +862,14 @@ static NSInteger const ATLPhotoActionSheet = 1000;
 
 - (void)handleApplicationDidBecomeActive:(NSNotification *)notification
 {
-    if (self.conversation && self.marksMessagesAsRead) {
-        NSError *error;
-        BOOL success = [self.conversation markAllMessagesAsRead:&error];
-        if (!success) {
-            NSLog(@"Failed to mark all messages as read with error: %@", error);
-        }
-    }
+    return;
+//    if (self.conversation && self.marksMessagesAsRead) {
+//        NSError *error;
+//        BOOL success = [self.conversation markAllMessagesAsRead:&error];
+//        if (!success) {
+//            NSLog(@"Failed to mark all messages as read with error: %@", error);
+//        }
+//    }
 }
 
 #pragma mark - Typing Indicator
